@@ -4,7 +4,7 @@ $m=strlen($str);
 $str1='babababababac';
 $n=strlen($str1);
 $pi=prefix($str,$m);
-$finally=matcher($pi,$n,$m,$str,$str1);
+matcher($pi,$n,$m,$str,$str1);
 
 //匹配 跳转
 function matcher($pi,$n,$m,$p,$t){
@@ -23,7 +23,7 @@ function matcher($pi,$n,$m,$p,$t){
                 
         }
 }
-//求出与真后缀匹配的最大前缀
+//求出与真后缀匹配的前缀(next)
 function prefix($p,$m){
         $k=0;
         $pi=array();
